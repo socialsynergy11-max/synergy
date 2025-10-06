@@ -46,7 +46,7 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: "0.4s" }}>
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-lg group"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg group"
               onClick={() => scrollToSection("about")}
             >
               Explore Our Journey
@@ -55,7 +55,7 @@ export const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="text-lg border-primary/50 hover:bg-primary/10"
+              className="text-lg border-primary/50 hover:bg-primary/10 text-primary"
               onClick={() => scrollToSection("events")}
             >
               View Events

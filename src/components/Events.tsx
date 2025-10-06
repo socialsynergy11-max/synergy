@@ -90,7 +90,7 @@ export const Events = () => {
 
               <Button
                 variant="outline"
-                className="w-full group border-primary/50 hover:bg-primary/10"
+                className="w-full group border-primary/50 hover:bg-primary/10 text-primary"
               >
                 Learn More
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />

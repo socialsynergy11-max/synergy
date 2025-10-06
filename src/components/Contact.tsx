@@ -73,7 +73,7 @@ export const Contact = () => {
                   required
                 />
               </div>
-              <Button type="submit" className="w-full bg-primary hover:bg-primary/90">
+              <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
                 Send Message
               </Button>
             </form>

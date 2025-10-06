@@ -28,6 +28,9 @@ export const Footer = () => {
               <a href="#activities" className="block text-muted-foreground hover:text-primary transition-colors">
                 Activities
               </a>
+              <a href="#team" className="block text-muted-foreground hover:text-primary transition-colors">
+                Team
+              </a>
             </div>
           </div>
 

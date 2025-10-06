@@ -45,9 +45,15 @@ export const Navbar = () => {
             >
               Activities
             </button>
+            <button
+              onClick={() => scrollToSection("team")}
+              className="text-foreground hover:text-primary transition-colors"
+            >
+              Team
+            </button>
             <Button
               onClick={() => scrollToSection("contact")}
-              className="bg-primary hover:bg-primary/90"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground"
             >
               Join Us
             </Button>
@@ -89,9 +95,15 @@ export const Navbar = () => {
             >
               Activities
             </button>
+            <button
+              onClick={() => scrollToSection("team")}
+              className="text-foreground hover:text-primary transition-colors text-left"
+            >
+              Team
+            </button>
             <Button
               onClick={() => scrollToSection("contact")}
-              className="bg-primary hover:bg-primary/90 w-full"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground w-full"
             >
               Join Us
             </Button>
