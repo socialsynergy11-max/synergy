@@ -21,32 +21,32 @@ export const Hero = () => {
       }}
     >
       {/* Animated background elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-20 w-72 h-72 bg-primary/20 rounded-full blur-3xl animate-float"></div>
-        <div className="absolute bottom-20 right-20 w-96 h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }}></div>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-10 md:top-20 left-10 md:left-20 w-40 md:w-72 h-40 md:h-72 bg-primary/20 rounded-full blur-3xl animate-float"></div>
+        <div className="absolute bottom-10 md:bottom-20 right-10 md:right-20 w-48 md:w-96 h-48 md:h-96 bg-secondary/20 rounded-full blur-3xl animate-float" style={{ animationDelay: "1s" }}></div>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10 pt-20 md:pt-0">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-8 animate-fade-in">
+          <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6 md:mb-8 animate-fade-in">
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm text-primary">Building Connections, Creating Impact</span>
+            <span className="text-xs sm:text-sm text-primary">Building Connections, Creating Impact</span>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-slide-up">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 md:mb-6 animate-slide-up leading-tight">
             Welcome to{" "}
             <span className="gradient-text">Social Synergy</span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-slide-up" style={{ animationDelay: "0.2s" }}>
+          <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-muted-foreground mb-6 md:mb-8 animate-slide-up px-4" style={{ animationDelay: "0.2s" }}>
             BNM Institute of Technology's premier club for fostering social awareness,
             community engagement, and meaningful connections.
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: "0.4s" }}>
+          <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center animate-slide-up px-4" style={{ animationDelay: "0.4s" }}>
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground text-lg group"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground text-base md:text-lg group w-full sm:w-auto"
               onClick={() => scrollToSection("about")}
             >
               Explore Our Journey
@@ -55,7 +55,7 @@ export const Hero = () => {
             <Button
               size="lg"
               variant="outline"
-              className="text-lg border-primary/50 hover:bg-primary/10 text-primary"
+              className="text-base md:text-lg border-primary/50 hover:bg-primary/10 text-primary w-full sm:w-auto"
               onClick={() => scrollToSection("events")}
             >
               View Events

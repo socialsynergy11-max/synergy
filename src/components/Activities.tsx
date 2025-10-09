@@ -34,39 +34,39 @@ const activities = [
 
 export const Activities = () => {
   return (
-    <section id="activities" className="py-24 bg-muted/30">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+    <section id="activities" className="py-16 md:py-24 bg-muted/30">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 md:mb-4 gradient-text">
             What We Do
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             Our diverse range of activities ensures there's something for everyone interested in
             making a positive social impact.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 max-w-5xl mx-auto">
           {activities.map((activity, index) => (
             <Card
               key={index}
-              className="p-8 bg-card border-border hover-lift cursor-pointer animate-scale-in"
+              className="p-6 md:p-8 bg-card border-border hover-lift cursor-pointer animate-scale-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="mb-6">
-                <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-4">
-                  <activity.icon className={`w-8 h-8 ${activity.color}`} />
+              <div className="mb-4 md:mb-6">
+                <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-primary/10 flex items-center justify-center mb-3 md:mb-4">
+                  <activity.icon className={`w-7 h-7 md:w-8 md:h-8 ${activity.color}`} />
                 </div>
-                <h3 className="text-2xl font-bold mb-3">{activity.title}</h3>
-                <p className="text-muted-foreground leading-relaxed">{activity.description}</p>
+                <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-3">{activity.title}</h3>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">{activity.description}</p>
               </div>
             </Card>
           ))}
         </div>
 
-        <div className="mt-16 max-w-4xl mx-auto text-center p-8 rounded-2xl bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 animate-slide-up">
-          <h3 className="text-2xl font-bold mb-4">Get Involved Today</h3>
-          <p className="text-lg text-muted-foreground mb-6">
+        <div className="mt-12 md:mt-16 max-w-4xl mx-auto text-center p-6 md:p-8 rounded-2xl bg-gradient-to-r from-primary/10 to-secondary/10 border border-primary/20 animate-slide-up">
+          <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4">Get Involved Today</h3>
+          <p className="text-sm md:text-base lg:text-lg text-muted-foreground mb-4 md:mb-6">
             Whether you're passionate about environmental issues, social justice, community service,
             or personal development, Social Synergy offers opportunities for you to make a difference.
             Join us in our mission to create a more aware and connected community!

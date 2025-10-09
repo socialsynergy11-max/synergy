@@ -60,42 +60,42 @@ const teamMembers = [
 
 export const Team = () => {
   return (
-    <section id="team" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+    <section id="team" className="py-16 md:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 md:mb-4 gradient-text">
             Meet Our Core Team
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             The dedicated leaders driving Social Synergy's mission of creating meaningful
             social impact and fostering community connections.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 max-w-7xl mx-auto">
           {teamMembers.map((member, index) => (
             <Card
               key={index}
-              className="p-6 bg-card border-border hover-lift cursor-pointer animate-scale-in overflow-hidden group"
+              className="p-5 md:p-6 bg-card border-border hover-lift cursor-pointer animate-scale-in overflow-hidden group"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <div className="relative mb-6">
-                <div className="w-32 h-32 mx-auto rounded-full overflow-hidden bg-muted border-4 border-primary/20 group-hover:border-primary/50 transition-colors">
+              <div className="relative mb-5 md:mb-6">
+                <div className="w-28 h-28 md:w-32 md:h-32 mx-auto rounded-full overflow-hidden bg-muted border-4 border-primary/20 group-hover:border-primary/50 transition-colors">
                   <img
                     src={member.image}
-                    alt={member.name}
+                    alt={`${member.name} - ${member.role}`}
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
               </div>
 
-              <div className="text-center mb-4">
-                <h3 className="text-2xl font-bold mb-1">{member.name}</h3>
-                <p className="text-primary font-semibold">{member.role}</p>
+              <div className="text-center mb-3 md:mb-4">
+                <h3 className="text-xl md:text-2xl font-bold mb-1">{member.name}</h3>
+                <p className="text-sm md:text-base text-primary font-semibold">{member.role}</p>
               </div>
 
-              <p className="text-muted-foreground text-center mb-6 text-sm leading-relaxed">
+              <p className="text-muted-foreground text-center mb-4 md:mb-6 text-xs md:text-sm leading-relaxed">
                 {member.bio}
               </p>
 

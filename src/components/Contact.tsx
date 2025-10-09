@@ -20,21 +20,21 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-24 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-16 animate-fade-in">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">
+    <section id="contact" className="py-16 md:py-24 bg-background">
+      <div className="container mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 md:mb-16 animate-fade-in">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-3 md:mb-4 gradient-text">
             Get In Touch
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
             Interested in joining Social Synergy or have questions? We'd love to hear from you!
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <Card className="p-8 bg-card border-border animate-slide-in-left">
-            <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
-            <form onSubmit={handleSubmit} className="space-y-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 max-w-6xl mx-auto">
+          <Card className="p-6 md:p-8 bg-card border-border animate-slide-in-left">
+            <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">Send Us a Message</h3>
+            <form onSubmit={handleSubmit} className="space-y-4 md:space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Name
@@ -45,6 +45,7 @@ export const Contact = () => {
                   value={formData.name}
                   onChange={(e) => setFormData({ ...formData, name: e.target.value })}
                   required
+                  className="text-sm md:text-base"
                 />
               </div>
               <div>
@@ -58,6 +59,7 @@ export const Contact = () => {
                   value={formData.email}
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
+                  className="text-sm md:text-base"
                 />
               </div>
               <div>
@@ -71,28 +73,29 @@ export const Contact = () => {
                   value={formData.message}
                   onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                   required
+                  className="text-sm md:text-base"
                 />
               </div>
-              <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+              <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground text-sm md:text-base">
                 Send Message
               </Button>
             </form>
           </Card>
 
-          <div className="space-y-8 animate-slide-up">
-            <Card className="p-8 bg-card border-border">
-              <h3 className="text-2xl font-bold mb-6">Connect With Us</h3>
-              <div className="space-y-4">
+          <div className="space-y-6 md:space-y-8 animate-slide-up">
+            <Card className="p-6 md:p-8 bg-card border-border">
+              <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6">Connect With Us</h3>
+              <div className="space-y-3 md:space-y-4">
                 <a
                   href="mailto:socialsynergy@bnmit.edu"
-                  className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors group"
+                  className="flex items-center gap-3 md:gap-4 p-3 md:p-4 rounded-lg hover:bg-muted/50 transition-colors group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors">
-                    <Mail className="w-6 h-6 text-primary" />
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center group-hover:bg-primary/20 transition-colors flex-shrink-0">
+                    <Mail className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                   </div>
-                  <div>
-                    <div className="font-semibold">Email</div>
-                    <div className="text-sm text-muted-foreground">socialsynergy@bnmit.edu</div>
+                  <div className="min-w-0">
+                    <div className="font-semibold text-sm md:text-base">Email</div>
+                    <div className="text-xs md:text-sm text-muted-foreground truncate">socialsynergy@bnmit.edu</div>
                   </div>
                 </a>
 
@@ -100,14 +103,14 @@ export const Contact = () => {
                   href="https://instagram.com/socialsynergy.bnmit"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors group"
+                  className="flex items-center gap-3 md:gap-4 p-3 md:p-4 rounded-lg hover:bg-muted/50 transition-colors group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors">
-                    <Instagram className="w-6 h-6 text-secondary" />
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-secondary/10 flex items-center justify-center group-hover:bg-secondary/20 transition-colors flex-shrink-0">
+                    <Instagram className="w-5 h-5 md:w-6 md:h-6 text-secondary" />
                   </div>
-                  <div>
-                    <div className="font-semibold">Instagram</div>
-                    <div className="text-sm text-muted-foreground">@socialsynergy.bnmit</div>
+                  <div className="min-w-0">
+                    <div className="font-semibold text-sm md:text-base">Instagram</div>
+                    <div className="text-xs md:text-sm text-muted-foreground truncate">@socialsynergy.bnmit</div>
                   </div>
                 </a>
 
@@ -115,24 +118,24 @@ export const Contact = () => {
                   href="https://linkedin.com/company/socialsynergy-bnmit"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted/50 transition-colors group"
+                  className="flex items-center gap-3 md:gap-4 p-3 md:p-4 rounded-lg hover:bg-muted/50 transition-colors group"
                 >
-                  <div className="w-12 h-12 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors">
-                    <Linkedin className="w-6 h-6 text-accent" />
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors flex-shrink-0">
+                    <Linkedin className="w-5 h-5 md:w-6 md:h-6 text-accent" />
                   </div>
-                  <div>
-                    <div className="font-semibold">LinkedIn</div>
-                    <div className="text-sm text-muted-foreground">Social Synergy BNMIT</div>
+                  <div className="min-w-0">
+                    <div className="font-semibold text-sm md:text-base">LinkedIn</div>
+                    <div className="text-xs md:text-sm text-muted-foreground truncate">Social Synergy BNMIT</div>
                   </div>
                 </a>
 
-                <div className="flex items-center gap-4 p-4">
-                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center">
-                    <MapPin className="w-6 h-6 text-primary" />
+                <div className="flex items-center gap-3 md:gap-4 p-3 md:p-4">
+                  <div className="w-10 h-10 md:w-12 md:h-12 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="w-5 h-5 md:w-6 md:h-6 text-primary" />
                   </div>
-                  <div>
-                    <div className="font-semibold">Location</div>
-                    <div className="text-sm text-muted-foreground">
+                  <div className="min-w-0">
+                    <div className="font-semibold text-sm md:text-base">Location</div>
+                    <div className="text-xs md:text-sm text-muted-foreground">
                       BNM Institute of Technology, Bangalore
                     </div>
                   </div>
@@ -140,9 +143,9 @@ export const Contact = () => {
               </div>
             </Card>
 
-            <Card className="p-8 bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
-              <h3 className="text-xl font-bold mb-3">Join Our Community</h3>
-              <p className="text-muted-foreground mb-4">
+            <Card className="p-6 md:p-8 bg-gradient-to-br from-primary/10 to-secondary/10 border-primary/20">
+              <h3 className="text-lg md:text-xl font-bold mb-2 md:mb-3">Join Our Community</h3>
+              <p className="text-sm md:text-base text-muted-foreground mb-3 md:mb-4">
                 Be part of a vibrant community making real change. Follow us on social media for
                 updates on events, initiatives, and opportunities to get involved.
               </p>
