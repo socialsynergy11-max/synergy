@@ -4,7 +4,7 @@ import { Linkedin, Mail, Instagram } from "lucide-react";
 const teamMembers = [
   {
     name: "Priya Sharma",
-    role: "President",
+    role: "Lead",
     bio: "Passionate about creating social impact and leading our team towards meaningful community engagement.",
     image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Priya",
     linkedin: "#",
@@ -13,7 +13,7 @@ const teamMembers = [
   },
   {
     name: "Rahul Kumar",
-    role: "Vice President",
+    role: "Vice Lead",
     bio: "Dedicated to organizing impactful events and fostering connections within our college community.",
     image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Rahul",
     linkedin: "#",
@@ -31,7 +31,7 @@ const teamMembers = [
   },
   {
     name: "Arjun Patel",
-    role: "Events Head",
+    role: "Event Coordinator",
     bio: "Creative mind behind our events, bringing innovative ideas to life and creating memorable experiences.",
     image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Arjun",
     linkedin: "#",
@@ -40,7 +40,7 @@ const teamMembers = [
   },
   {
     name: "Sneha Iyer",
-    role: "Social Media Manager",
+    role: "Graphics Lead",
     bio: "Amplifying our voice online and engaging with our community through creative digital content.",
     image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Sneha",
     linkedin: "#",
@@ -49,7 +49,7 @@ const teamMembers = [
   },
   {
     name: "Vikram Singh",
-    role: "Outreach Coordinator",
+    role: "Student Coordinator",
     bio: "Building bridges with external organizations and expanding our impact beyond campus boundaries.",
     image: "https://api.dicebear.com/7.x/avataaars/svg?seed=Vikram",
     linkedin: "#",
